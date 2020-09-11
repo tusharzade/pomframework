@@ -7,15 +7,10 @@
         <methods>
           <include name="setUpSuite"/>
           <include name="addingUser"/>
+          <include name="setup"/>
           <include name="loginApplication"/>
         </methods>
       </class> <!-- com.automation.testcases.LoginTestCRM -->
-      <class name="com.automation.testcases.CreateUser">
-        <methods>
-          <include name="addingUser"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.automation.testcases.CreateUser -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
