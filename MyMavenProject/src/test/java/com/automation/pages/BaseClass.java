@@ -37,6 +37,7 @@ public class BaseClass {
 
 	@BeforeClass
 	public void setup() {
+		System.out.println(config.getDataFromConfig("appURL"));
 		driver = BrowserFactory.startApplication(driver, config.getDataFromConfig("Browser"),config.getDataFromConfig("appURL"));
 	}
 

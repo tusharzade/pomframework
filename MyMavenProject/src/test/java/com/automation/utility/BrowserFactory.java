@@ -14,6 +14,7 @@ public class BrowserFactory {
 		{
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
+	//		driver.get(appURL);
 		}
 		else if (browserName.equals("firefox")) {
 			System.out.println(" Browser not supported ");
@@ -29,7 +30,7 @@ public class BrowserFactory {
 		driver.manage().window().maximize();
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
+		System.out.println("url launched");
 		return driver;
 		
 	}
